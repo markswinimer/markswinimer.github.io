@@ -1,179 +1,132 @@
 /* Main Stylesheets */
-@import url('https://fonts.googleapis.com/css?family=Signika:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Sunflower:300,500,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Slabo+27px');
+
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+  padding: 3rem 5rem;
+  padding-bottom: 0;
+  display: flex;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 5rem;
+  line-height: 7rem;
   font-weight: 300;
-  background-color: #f3f3f3;
+  color: #222222;
 }
 
 h2 {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-
-  }
-h3 {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-  font-size: 22px;
-  }
-h4 {
-  font-size: 24px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.2rem;
   font-weight: 400;
+  color: #222222;
+  margin-bottom: 2.6rem;
+  margin-top: 5.8rem;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #222222;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.6rem;
 }
 
 
-/* main */
 
-.main-container {
-  height: 100vh;
+.color-green {
+  color: #C02942;
+}
+
+/* Nav */
+.profile-img {
+  max-height: 80px;
+  max-width: 80px;
+  border-radius: 50px;
+  margin-right: 5rem;
+  flex: 1;
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  filter:contrast(90%) saturate(70%);
+}
+
+.nav-links-container {
+  flex: 1;
+  margin: auto 0;
+}
+
+.nav-link {
+  display: inline;
+  font-style: italic;
+  margin-right: 2em;
+}
+
+/* Header */
+
+
+header {
+  width: 100%;
+}
+
+.header-callout-container {
+  padding: 10rem 0;
+  max-width: 60%;
+  margin: 3rem auto;
+  margin-bottom: 0;
+  line-height: 4.5rem;
+}
+
+.header-img {
+  display: block;
+  max-height: 175px;
+  max-width: 175px;
+  border-radius: 200px;
+  margin: 0 auto;
+}
+
+.header-bubbles-container {
+  max-width: 100%;
+  padding: 2rem 15%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #f3f3f3;
 }
 
-.header-container {
-  margin: 0 auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 40px 150px auto 50px 100px;
-  grid-template-areas:
-    "a a d d d d d d d d b b"
-    "a a x e e c c f f y b b"
-    "g g x h h h h h h y i i"
-    "g g x l l l l l l y i i"
-    "g g m m m m m m m m i i"
-    "g g m m m m m m m m i i";
+.header-bubble {
+  flex: 1;
+  max-height: 165px;
+  max-width: 165px;
+  border-radius: 300px;
 }
 
-.profile-image {
-  grid-area: c;
-  height: auto;
-  height: 150px;
-  width: 150px;
-  margin: 0 auto;
-  border-radius: 200px;
-  overflow: hidden;
-}
+/* main */
 
-.name-left {
-  text-align: right;
-  margin: auto 0;
-  grid-area: e;
-}
-
-.name-right {
-  text-align: left;
-  margin: auto 0;
-  grid-area: f;
-}
-
-.self-text-box {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  padding: 35px 50px 25px 50px;
-  text-align: justify;
-  grid-area: h;
-
-}
-
-.link-line {
-  grid-area: l;
-  padding: 0 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "a b c";
-}
-
-
-.link-web,.link-design,.link-emails {
-  margin: auto;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-}
-.link-web {
-  grid-area: a;
-  text-align: left;
-  margin: auto 0;
-}
-.link-design {
-  grid-area: b;
-}
-.link-emails {
-  grid-area: c;
-  text-align: right;
-  margin: auto 0;
-}
-
-.portfolio-stage {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto 50px auto 50px auto 50px;
-  grid-template-areas:
-    "a a d d d d d d d d b b"
-    "a a f f f f f f f f b b"
-    "a a g g g g g g g g b b"
-    "a a h h h h h h h h b b"
-    "a a e e e e e e e e b b"
-    "i i i i i i i i i i i i";
-}
-
-
-
-.webdev-section {
-  grid-area: d;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 30px 20px 50px auto;
-}
-.graphic-design-section {
-  grid-area: g;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 30px 20px 50px auto;
-}
-.emails-section {
-  grid-area: e;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 30px 20px 50px auto;
-}
-
-.section-title {
-  grid-column: 1 / 13;
-  grid-row: 1;
-  font-size: 18px;
-  border-bottom: 3px solid #222222;
-}
-.item-section-a {
-  margin: auto 0 ;
-  grid-column: 1 / 13;
-  grid-row: 3;
-}
-
-.item-a-photo {
-  grid-column: 1 / 6;
-  grid-row: 4;
-  padding-top: 20px;
-}
-
-.item-description {
-  grid-column: 6 / 13;
-  grid-row: 4;
-  padding-left: 20px;
-}
-.item-photo {
-  box-shadow: 0 0 3px #222222, 0 0 10px #f3f3f3;
-  border-radius: 8px;
-  width: 100%;
+main {
+  max-width: 70%;
+  margin: 5rem auto;
+  height: 100vh;
 }

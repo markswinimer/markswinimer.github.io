@@ -27,14 +27,14 @@ h1 {
   font-size: 5rem;
   line-height: 7rem;
   font-weight: 300;
-  color: #222222;
+  color: #353634;
 }
 
 h2 {
   font-family: 'Libre Baskerville', serif;
   font-size: 2.2rem;
   font-weight: 400;
-  color: #222222;
+  color: #353634;
   margin-bottom: 2.6rem;
   margin-top: 5.8rem;
 }
@@ -43,7 +43,7 @@ h3 {
   font-family: 'Libre Baskerville', serif;
   font-size: 2.2rem;
   font-weight: 400;
-  color: #222222;
+  color: #353634;
 }
 
 p {
@@ -56,7 +56,7 @@ p {
 
 
 .color-green {
-  color: #C02942;
+  color: #0CA5B0;
 }
 
 /* Nav */
@@ -69,7 +69,7 @@ p {
   -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
   box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
-  filter:contrast(90%) saturate(70%);
+  filter:contrast(115%) saturate(70%);
 }
 
 .nav-links-container {
@@ -79,8 +79,13 @@ p {
 
 .nav-link {
   display: inline;
-  font-style: italic;
-  margin-right: 2em;
+  font-size: 1.8rem;
+  margin-right: 1.5em;
+}
+
+.nav-link a {
+  color: #222222;
+  text-decoration: none;
 }
 
 /* Header */
@@ -128,5 +133,71 @@ header {
 main {
   max-width: 70%;
   margin: 5rem auto;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 10rem;
+}
+
+
+.tag-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  line-height: 2.5rem;
+  padding-top: 0;
+  font-size: 1.6rem;
+  color: white;
+  opacity: 0.9;
+  border-radius: .2rem;
+  background-color: #0CA5B0;
+  display: inline-flex;
+  margin-right: 1.8rem;
+}
+
+.project {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+.project-img-container {
+
+}
+.project-img {
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  max-width: 75%;
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+hr {
+  border: 0;
+  border-bottom: .2rem solid #f3f3f3;
+}
+
+.footer-container {
+  height: 10rem;
+  background-color: white;
+}
+
+.process-container {
+  margin-bottom: 15rem;
+  margin-top: 10rem;
+}
+.title-h3 {
+  margin-top: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
 }

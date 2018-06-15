@@ -79,7 +79,7 @@ nav {
 }
 
 .nav-container {
-  width: 900px;
+  width: 850px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -124,7 +124,7 @@ header {
 
 .header-callout-container {
   padding: 6rem 0;
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
   margin-bottom: 0;
   line-height: 4.5rem;
@@ -160,7 +160,7 @@ main.projects {
   margin-top: 0;
 }
 main {
-  width: 900px;
+  width: 850px;
   margin: 5rem auto;
   height: 100%;
 }
@@ -226,7 +226,7 @@ footer {
   background-color: #f3f3f3;
 }
 .footer-container {
-  width: 900px;
+  width: 850px;
   margin: 0 auto;
   background-color: #f3f3f3;
 }
@@ -284,6 +284,9 @@ footer {
 .row-four {
   grid-row: 4;
 }
+.clear-top {
+  margin-top: 0;
+}
 
 .closing-container {
     padding-bottom: 5rem;
@@ -295,7 +298,7 @@ footer {
   line-height: 3.6rem;
 }
 .type-grid {
-  width: 900px;
+  width: 850px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -328,7 +331,9 @@ footer {
 .projects-container {
   display: flex;
   flex-direction: row;
-  margin: 5.8rem auto;
+  margin: 5rem auto;
+  margin-bottom: 2rem;
+  justify-content:center;
 }
 
 .card {
@@ -357,11 +362,11 @@ footer {
 
 .card h2 {
   font-weight: 500;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .card p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.25rem;
 }
 .card-copy {
   padding: 1rem 3rem;
@@ -374,10 +379,19 @@ footer {
 
 
 .flex-column-left   {
-  flex: 1;
+  flex: 2;
 }
 
 .flex-column-right {
   flex: 1;
 
+}
+
+.project-links {
+}
+.project-links p {
+  margin: 0 0;
+  color: #74787B;
+  display: inline;
+  margin-right: 1rem;
 }

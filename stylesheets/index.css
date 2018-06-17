@@ -119,11 +119,11 @@ nav {
 
 header {
   width: 100%;
-  background-color: #FBFBFB;
+  background-color: #F7F6F6;
 }
 
 .header-callout-container {
-  padding: 6rem 0;
+  padding: 8rem 0;
   max-width: 850px;
   margin: 0 auto;
   margin-bottom: 0;
@@ -221,14 +221,13 @@ hr {
 
 footer {
   height: auto;
-  padding: .5rem 0;
-  border-top: 1px solid silver;
-  background-color: #f3f3f3;
+  background-color: #F7F6F6;
 }
 .footer-container {
   width: 850px;
+  height: auto;
   margin: 0 auto;
-  background-color: #f3f3f3;
+  color: gray;
 }
 
 .process-container {

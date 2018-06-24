@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
   <title>Mark Swinimer</title>
+  <meta id="metaViewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1" />
   <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
 
 </head>
@@ -15,17 +14,31 @@
         <h3><a href="./index.html">Home</a></h3>
         <h3 id="navProject"><a href="./projects.html">Projects</a></h3>
       </div>
-      <img class="profile-img" src="./assets/markSwinimer-LG.jpg"/>
+      <div class="nav-link-img">
+        <img class="profile-img" src="./assets/markSwinimer-LG.jpg"/>
+      </div>
       <div class="nav-links left">
         <h3><a href="https://github.com/markswinimer">Github</a></h3>
         <h3><a href="https://www.linkedin.com/in/markswinimer/">LinkedIn</a></h3>
       </div>
+
+      <div class="media-nav">
+        <div class="nav-links">
+          <h3><a href="./index.html">Home</a></h3>
+          <h3 id="navProject"><a href="./projects.html">Projects</a></h3>
+        </div>
+        <div class="nav-links">
+          <h3><a href="https://github.com/markswinimer">Github</a></h3>
+          <h3  id="navProject"><a href="https://www.linkedin.com/in/markswinimer/">LinkedIn</a></h3>
+        </div>
+      </div>
+
     </div>
   </nav>
 
   <!-- Welcome and introduction -->
   <header>
-    <div class="header-callout-container">
+    <div class="header-container">
       <h1>Nice to meet you! I'm <span class="color-green">Mark Swinimer</span>, a <span class="color-green">Web Developer</span> in Boston, MA.</h1>
       <!-- <img class="header-img" src="./assets/markSwinimer-LG.jpg"/> -->
     </div>
@@ -46,9 +59,10 @@
           with people. I'm a design oriented Jr. Full-Stack Web Developer. I've always been driven by creativity and continue to pursue new ways to express it. I am focused on learning Full-Stack Web development and creating clean, creative, and functional solutions.
         </p>
       </div>
+
       <div class="projects-container">
 
-        <div class="flex-column-left">
+        <div class="cards-grid">
           <div class="card">
             <div class="card-img-container">
               <img src="./assets/uie_site_400.jpg">
@@ -58,7 +72,6 @@
                 <p class="tag">PHP</p>
               </div>
             </div>
-
             <div class="card-copy">
               <h2>UIE Landing Page</h2>
               <p>
@@ -118,9 +131,6 @@
             </div>
           </div>
 
-        </div>
-
-        <div class="flex-column-right">
           <div class="card">
             <div class="card-img-container">
               <img src="./assets/nerd_game_400.jpg">
@@ -187,7 +197,6 @@
                 <p><a href="./artwork.html">View Work</a></p>
               </div>
             </div>
-          </div>
         </div>
       </div>
       <div class="closing-container">
@@ -196,9 +205,9 @@
           I'm currently looking for my next career in web development while finishing my internship at UIE. I'm interested in Front-End and Full-Stack development roles at companies in Boston. I'd be more than happy to discuss, in detial, anything you see on this site(or in general) by email or phone if you reach out to me.
         </p>
         <br />
-        <h3>Email - <span>markswinimer@gmail.com</span></h3>
-        <h3>LinkedIn - <span><a href="https://www.linkedin.com/in/markswinimer/">https://www.linkedin.com/in/markswinimer/</a></span></h3>
-        <h3>Github - <span><a href="https://github.com/markswinimer">https://github.com/markswinimer</a></span></h3>
+        <h3>Email <span>markswinimer@gmail.com</span></h3>
+        <h3>LinkedIn <span><a href="https://www.linkedin.com/in/markswinimer/">https://www.linkedin.com/in/markswinimer/</a></span></h3>
+        <h3>Github <span><a href="https://github.com/markswinimer">https://github.com/markswinimer</a></span></h3>
 
       </div>
     </div>
@@ -206,10 +215,10 @@
 
   <!-- Will this be used? -->
   <footer>
-  <div class="footer-container">
-  <p style="padding: 0; margin: 0; margin: auto; display: inline;">Mark Swinimer &nbsp; | &nbsp; <a href="https://github.com/markswinimer">github</a> &nbsp; | &nbsp; <a href="https://www.linkedin.com/in/markswinimer/">linkedin</a></p>
-  <p style="padding: 0; margin: 0; margin: auto; float: right; display:inline;">2018</p>
-</div>
-</footer>
+    <div class="footer-container">
+      <p style="padding: 0; margin: 0; margin: auto; display: inline;">Mark Swinimer &nbsp; | &nbsp; <a href="https://github.com/markswinimer">github</a> &nbsp; | &nbsp; <a href="https://www.linkedin.com/in/markswinimer/">linkedin</a></p>
+      <p style="padding: 0; margin: 0; margin: auto; float: right; display:inline;">2018</p>
+    </div>
+  </footer>
 </body>
 </html>

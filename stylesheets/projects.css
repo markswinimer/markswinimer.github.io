@@ -1,0 +1,55 @@
+
+p a:link, p a:active, p a:visited, p a:hover  {
+  color: #30C4C9;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #353634;
+  margin-bottom: 1.5rem;
+  margin-top: 4.5rem;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.6rem;
+  padding-left: 5rem;
+  margin: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  padding-left: .5rem;
+}
+
+.project {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+
+
+.project-img {
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
+  max-width: 75%;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.img-caption {
+  font-style: italic;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}

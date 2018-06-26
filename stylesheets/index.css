@@ -25,7 +25,8 @@ a:visited {
 }
 
 a:hover {
-    color: inherit;
+  transition: .15s;
+    color: #50C9CD;;
 }
 
 a:active {
@@ -43,7 +44,7 @@ h1 {
   font-size: 5rem;
   line-height: 7rem;
   font-weight: 300;
-  color: #353634;
+  color: #1D1313;
 }
 
 h2 {
@@ -65,6 +66,15 @@ h3 {
   margin-top: 1rem;
 }
 
+h3#navProject:hover {
+  cursor: pointer;
+}
+
+h2#projectsView {
+  padding-top: 4rem;
+  margin-top: 1rem;
+}
+
 p, h3 span {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
@@ -77,7 +87,11 @@ h3 span {
 }
 
 .color-green {
-  color: #F25C5E;
+  color: #30C4C9;
+}
+span.color-green:hover {
+  color: white;
+  background-color: #30C4C9;
 }
 /* ------------------------------ */
 
@@ -156,6 +170,12 @@ header {
   margin: 0 auto;
   line-height: 4.5rem;
 }
+.header-container-projects {
+  padding: 2rem 5rem;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 4.5rem;
+}
 
 .header-img {
   display: block;
@@ -184,32 +204,9 @@ main {
 }
 
 
-.tag-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 1rem;
-}
 
-.tag {
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-  padding: 0 1rem;
-  line-height: 2.5rem;
-  padding-top: 0;
-  font-size: 1.6rem;
-  color: white;
-  border-radius: .2rem;
-  background-color: #F25C5E;
-  display: inline-flex;
-  margin-right: 1.8rem;
-}
-.tags-on-img .tag {
-  -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.40);
-  -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.40);
-  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.40);
-}
+
+
 
 .project {
   margin-top: 0rem;
@@ -217,9 +214,6 @@ main {
   font-size: 2.8rem;
 }
 
-.project-img-container {
-
-}
 .project-img {
   -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.25);
@@ -259,13 +253,21 @@ hr {
   transform: translateY(0);
   border-radius: .4rem;
   overflow: hidden;
+  transition: border-radius 1s;
+}
+
+.card:hover {
+  -moz-box-shadow: 1px 1px 6px 1.5px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 6px 1.5px rgba(0,0,0,0.15);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .card-img-container {
   height: 150px;
   overflow: hidden;
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
   position: relative;
   text-align: center;
@@ -273,8 +275,8 @@ hr {
 
 .tags-on-img {
   position: absolute;
-  bottom: 1.3rem;
-  left: 2rem;
+  bottom: 0rem;
+  left: 1.5rem;
 }
 
 .card h2 {
@@ -283,7 +285,8 @@ hr {
 }
 .card p {
   margin-top: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
 }
 .card-copy {
   padding: 1rem 3rem;
@@ -291,15 +294,51 @@ hr {
 
 .card-img-container img {
   filter: contrast(70%) brightness(115%);
+  width: 100%;
 }
 
-.project-links {
+.tags-on-img .tag {
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.20);
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.20);
+}
 
+.tag-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+
+
+.tag {
+  padding: 0 1rem;
+  margin-right: .5rem;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  color: white;
+  border-radius: .2rem;
+  background-color: #30C4C9;
+  display: inline-flex;
+  opacity: .9;
+}
+
+.tag:hover {
+  opacity: 1;
 }
 
 .project-links p {
   margin: 0 0;
   color: #74787B;
+  display: inline;
+  margin-right: 1rem;
+  transition: .15s;
+}
+.project-links p:hover {
+  margin: 0 0;
+  color: #50C9CD;
   display: inline;
   margin-right: 1rem;
 }

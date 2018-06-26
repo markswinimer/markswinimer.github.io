@@ -12,7 +12,7 @@
     <div class="nav-container">
       <div class="nav-links right">
         <h3><a href="./index.html">Home</a></h3>
-        <h3 id="navProject"><a href="./projects.html">Projects</a></h3>
+        <h3 id="navProject" onclick="viewProjects()">Projects</h3>
       </div>
       <div class="nav-link-img">
         <img class="profile-img" src="./assets/markSwinimer-LG.jpg"/>
@@ -25,7 +25,7 @@
       <div class="media-nav">
         <div class="nav-links">
           <h3><a href="./index.html">Home</a></h3>
-          <h3 id="navProject"><a href="./projects.html">Projects</a></h3>
+          <h3 id="navProject" onclick="scrollProjects()">Projects</a></h3>
         </div>
         <div class="nav-links">
           <h3><a href="https://github.com/markswinimer">Github</a></h3>
@@ -39,7 +39,7 @@
   <!-- Welcome and introduction -->
   <header>
     <div class="header-container">
-      <h1>Nice to meet you! I'm <span class="color-green">Mark Swinimer</span>, a <span class="color-green">Web Developer</span> in Boston, MA.</h1>
+      <h1 style="color: #1D1313;">Nice to meet you! I'm <span class="color-green">Mark Swinimer</span>, a <span class="color-green">Web Developer</span> in Boston, MA.</h1>
       <!-- <img class="header-img" src="./assets/markSwinimer-LG.jpg"/> -->
     </div>
   </header>
@@ -53,7 +53,7 @@
           I'm a design oriented Jr. Full-Stack Web Developer. I've always been driven by creativity and continue to pursue new ways to express it. I am focused on learning Full-Stack Web development and creating clean, creative, and functional solutions.
         </p>
 
-        <h2>Projects</h2>
+        <h2 id="projectsView">Projects</h2>
         <p>
           On my journey to become a web developer, I've created several great websites that im glad to share
           with people. I'm a design oriented Jr. Full-Stack Web Developer. I've always been driven by creativity and continue to pursue new ways to express it. I am focused on learning Full-Stack Web development and creating clean, creative, and functional solutions.
@@ -63,9 +63,10 @@
       <div class="projects-container">
 
         <div class="cards-grid">
+
           <div class="card">
             <div class="card-img-container">
-              <img src="./assets/uie_site_400.jpg">
+              <img src="./assets/L_1.png">
               <div class="tags-on-img">
                 <p class="tag">Landing Page</p>
                 <p class="tag">HMTL</p>
@@ -81,7 +82,7 @@
                 <!-- Disabled due to in progress -->
                 <!-- <p>Live Site</p> -->
                 <!-- <p class="divider">|</p> -->
-                <p><a href="./projects/uie-landing.html">About</a></p>
+                <p><a href="./uie-landing.html">About</a></p>
               </div>
 
             </div>
@@ -89,51 +90,7 @@
 
           <div class="card">
             <div class="card-img-container">
-              <img src="./assets/sotd_email_400.jpg">
-              <div class="tags-on-img">
-                <p class="tag">HTML Email</p>
-                <p class="tag">Mailchimp</p>
-              </div>
-            </div>
-            <div class="card-copy">
-              <h2>SotD Email Campaign</h2>
-              <p>
-                An email campaign template I created to promote UIE's All You Can Learn Library. Created in HTML/CSS.
-              </p>
-              <div class="project-links">
-                <p><a href="./sotd-live">Live Site</a></p>
-                <p class="divider">|</p>
-                <p><a href="./sotd-live">About</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img-container">
-              <img src="./assets/eat_search_400.jpg">
-              <div class="tags-on-img">
-                <p class="tag">Web Application</p>
-                <p class="tag">Ruby</p>
-                <p class="tag">React</p>
-              </div>
-            </div>
-            <div class="card-copy">
-              <h2>Graphic Design</h2>
-              <p>
-                Graphic Design was my forray into web development. View some of the graphic design work I've created.<br />
-              </p>
-              <div class="project-links">
-                <p><a href="./graphic-design">View Work</a></p>
-                <!-- disabled for creation -->
-                <!-- <p class="divider">|</p> -->
-                <!-- <p>About</p> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img-container">
-              <img src="./assets/nerd_game_400.jpg">
+              <img src="./assets/L_2.png">
               <div class="tags-on-img">
                 <p class="tag">Web Application</p>
                 <p class="tag">Ruby</p>
@@ -157,7 +114,30 @@
 
           <div class="card">
             <div class="card-img-container">
-              <a href="http://eatalike.herokuapp.com/"><img src="./assets/eat_search_400.jpg"></a>
+              <img src="./assets/L_3.png">
+              <div class="tags-on-img">
+                <p class="tag">HTML Email</p>
+                <p class="tag">Mailchimp</p>
+              </div>
+            </div>
+            <div class="card-copy">
+              <h2>SotD Email Campaign</h2>
+              <p>
+                An email campaign template I created to promote UIE's All You Can Learn Library. Created in HTML/CSS.
+              </p>
+              <div class="project-links">
+                <p><a href="./sotd-live">Live Site</a></p>
+                <p class="divider">|</p>
+                <p><a href="./sotd-live">About</a></p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <div class="card-img-container">
+              <a href="http://eatalike.herokuapp.com/"><img src="./assets/L_4.png"></a>
               <div class="tags-on-img">
                 <p class="tag">Web Application</p>
                 <p class="tag">Ruby</p>
@@ -179,13 +159,34 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" onfocus="card_hover" style="display:none;">
             <div class="card-img-container">
-              <img src="./assets/nerd_mode_400.jpg">
+              <img src="./assets/L_5.png">
               <div class="tags-on-img">
-                <p class="tag">Web Application</p>
-                <p class="tag">Ruby</p>
-                <p class="tag">React</p>
+                <p class="tag">Graphic Design</p>
+                <p class="tag">Art</p>
+              </div>
+            </div>
+            <div class="card-copy">
+              <h2>Graphic Design</h2>
+              <p>
+                Graphic Design was my forray into web development. View some of the graphic design work I've created.<br />
+              </p>
+              <div class="project-links">
+                <p><a href="./graphic-design">View Work</a></p>
+                <!-- disabled for creation -->
+                <!-- <p class="divider">|</p> -->
+                <!-- <p>About</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="display:none;">
+            <div class="card-img-container">
+              <img src="./assets/L_6.jpg">
+              <div class="tags-on-img">
+                <p class="tag">Artwork</p>
+                <p class="tag">Sketching</p>
               </div>
             </div>
             <div class="card-copy">
@@ -198,6 +199,7 @@
               </div>
             </div>
         </div>
+
       </div>
       <div class="closing-container">
         <h2 class="clear-top">Let's get in touch!</h2>
@@ -221,4 +223,12 @@
     </div>
   </footer>
 </body>
+
+<script>
+function viewProjects() {
+  document.getElementById("projectsView").scrollIntoView();
+}
+
+</script>
+
 </html>

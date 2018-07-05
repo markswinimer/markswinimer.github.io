@@ -328,6 +328,38 @@ hr {
 
 /* Footer */
 
+.contact-box {
+  background-color: #F7F6F6;
+  padding: 3rem;
+}
+
+.contact-box h2 {
+  margin-top: 0;
+}
+
+.closing-container .right-l {
+  float: right;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-links {
+  display: inline;
+  white-space:nowrap;
+  width: 49%;
+  flex: 1;
+  margin-right: 3rem;
+}
+.right-links {
+  flex: auto;
+  white-space:nowrap;
+  display: inline;
+  width: 50%;
+}
+
 footer {
   width: 100%;
   background-color: #F7F6F6;
